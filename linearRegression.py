@@ -10,7 +10,7 @@ gaussian_noise_sd = 1
 data = []
 
 
-#generate data based on a function that follows a 3x^3 - 2x^2 + 3 with a gaussian noise
+#generate data based on a function that follows a 5x+7 with a gaussian noise
 #x is uniformly distributed across min_x, max_x
 def initData(data_size, min_x,max_x,gaussian_noise_mean,gaussian_noise_sd):
     data = []
