@@ -44,13 +44,15 @@ def updateParam(predictions,featureVector, learningRate):
     featureVector[1] = featureVector[1] + (learningRate*x1)/len(predictions)
 
     return [featureVector[0],featureVector[1]]
-    #[[[x,y],prediction]]
+    
+    #predictions: [[[x,y],prediction]]
 def errorFunction(predictions):
     error = 0
     for i in range(len(predictions)):
         error += 0.5 * (predictions[i][0][1] - predictions[i][1])**2
     error /= len(predictions)
     return error
+    
 def epoch(iteration, featureVector, learningRate, data):
     for i in range(iteration):
         predictions = getPredictions(data, featureVector)
